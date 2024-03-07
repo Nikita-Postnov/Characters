@@ -5,11 +5,9 @@ def count_characters():
     num_characters = len(text) - 1  # Исключаем символ новой строки в конце текста
     result_label.config(text=f"Количество символов: {num_characters}")
 
-# Создаем окно
 root = tk.Tk()
 root.title("Считывание количества символов")
 
-# Создаем элементы интерфейса
 text_entry = tk.Text(root, wrap=tk.WORD, height=10, width=40)
 text_entry.pack(pady=10)
 
@@ -19,5 +17,4 @@ count_button.pack()
 result_label = tk.Label(root, text="", font=("Helvetica", 14))
 result_label.pack(pady=10)
 
-# Запускаем главный цикл обработки событий
 root.mainloop()
